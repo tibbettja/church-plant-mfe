@@ -1,13 +1,13 @@
-import { Julius_Sans_One, Urbanist } from 'next/font/google'
+import { Bungee, Urbanist } from 'next/font/google'
 
-
-const header = Julius_Sans_One({
+const header = Bungee({
   weight: '400',
   subsets: ['latin'],
   display: 'auto',
   style: ['normal'],
   variable: '--font-header'
 })
+
 
 const body = Urbanist({
   weight: ['100','200','300','400','500','600','700','800','900'],

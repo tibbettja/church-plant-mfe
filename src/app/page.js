@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material"
 import Image from "next/image"
-import HeroImage from 'public/images/home_hero.jpg'
+import HeroImage from 'public/images/home_hero_conduit.jpg'
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
                 <Image
                     src={HeroImage}
                     alt='Bible and Coffee'
-                    style={{ maxWidth: '100%', height: 'auto' }}
+                    style={{ width: '100%', maxWidth: '100%', height: 'auto' }}
                 />
             </Grid>
         </Grid>
