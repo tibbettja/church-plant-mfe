@@ -8,6 +8,9 @@ const Card = (theme) => ({
           marginRight: theme.spacing(-3)
         },
         borderRadius: '1px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
         variants: [
           {
             props: { raised: true },
@@ -52,9 +55,6 @@ const Card = (theme) => ({
         '& + .MuiCardContent-root': {
           paddingTop: 0
         },
-        // '& :last-of-type': {
-        //   paddingBottom: theme.spacing(5)
-        // },
         '& + .MuiCardActions-root': {
           paddingTop: 0
         }

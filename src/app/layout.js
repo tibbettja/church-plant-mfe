@@ -1,5 +1,3 @@
-"use client";
-
 import BaseLayout from "@/@core/layouts/BaseLayout";
 
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";

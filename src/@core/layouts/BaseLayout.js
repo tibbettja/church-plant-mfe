@@ -29,10 +29,7 @@ const ContentWrapper = styled('main')(({ theme }) => ({
   flexGrow: 1,
   width: '100%',
   padding: 0,
-  transition: 'padding .25s ease-in-out',
-  [theme.breakpoints.down('sm')]: {
-    paddingX: theme.spacing(4)
-  },
+  transition: 'padding .25s ease-in-out'
 }))
 
 const BaseLayout = ({ children }) => {

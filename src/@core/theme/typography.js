@@ -54,7 +54,8 @@ const Typography = (theme) => {
       lineHeight: 1.5,
       letterSpacing: '0.15px',
       fontSize: '16pt',
-      color: theme.palette.text.secondary
+      color: theme.palette.text.secondary,
+      fontWeight: 800,
     },
     button: {
       letterSpacing: '0.3px',
