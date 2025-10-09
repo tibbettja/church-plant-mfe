@@ -4,7 +4,7 @@ import pkg_config from './package.json' with { type: "json" };
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  output: 'standalone',
+  output: 'export',
   async redirects() {
     return [
       {
