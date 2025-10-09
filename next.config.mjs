@@ -1,10 +1,11 @@
 import pkg_config from './package.json' with { type: "json" };
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  output: 'export',
   async redirects() {
     return [
       {
@@ -17,8 +18,11 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_VERSION: pkg_config.version
   },
-  basePath: '/church-plant-mfe',
-  assetPrefix: '/church-plant-mfe'
+  basePath: isProd ? '/church-plant-mfe' : undefined,
+  assetPrefix: isProd ? '/church-plant-mfe' : undefined,
+  images: isProd ? {
+    unoptimized: true
+  } : undefined
 };
 
 export default nextConfig;
