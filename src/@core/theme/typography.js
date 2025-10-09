@@ -1,3 +1,5 @@
+import fonts from "./fonts"
+
 const Typography = (theme) => {
   return {
     h1: {
@@ -38,17 +40,20 @@ const Typography = (theme) => {
     subtitle1: {
       letterSpacing: '0.15px',
       fontSize: '10pt',
-      color: theme.palette.text.primary
+      color: theme.palette.text.primary,
+      fontFamily: fonts.body.style.fontFamily
     },
     subtitle2: {
       letterSpacing: '0.1px',
       fontSize: '10pt',
-      color: theme.palette.text.secondary
+      color: theme.palette.text.secondary,
+      fontFamily: fonts.body.style.fontFamily
     },
     body1: {
       letterSpacing: '0.15px',
-      fontSize: '16pt',
-      color: theme.palette.text.primary
+      fontSize: '14pt',
+      color: theme.palette.text.primary,
+      fontFamily: fonts.body.style.fontFamily
     },
     body2: {
       lineHeight: 1.5,
@@ -56,21 +61,25 @@ const Typography = (theme) => {
       fontSize: '16pt',
       color: theme.palette.text.secondary,
       fontWeight: 800,
+      fontFamily: fonts.body.style.fontFamily
     },
     button: {
       letterSpacing: '0.3px',
-      fontSize: '12pt',
-      color: theme.palette.text.primary
+      fontSize: '14pt',
+      color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily
     },
     caption: {
       letterSpacing: '0.4px',
       fontSize: '8pt',
-      color: theme.palette.text.secondary
+      color: theme.palette.text.secondary,
+      fontFamily: fonts.subtitle.style.fontFamily
     },
     overline: {
       letterSpacing: '1px',
       fontSize: '8pt',
-      color: theme.palette.text.secondary
+      color: theme.palette.text.secondary,
+      fontFamily: fonts.subtitle.style.fontFamily
     }
   }
 }

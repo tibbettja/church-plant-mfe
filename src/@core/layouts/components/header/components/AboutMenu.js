@@ -1,0 +1,61 @@
+"use client";
+
+import * as React from 'react';
+import {
+  Menu,
+  MenuItem,
+  Button
+} from "@mui/material";
+import { ArrowDropDown } from '@mui/icons-material';
+import { useRouter } from 'next/navigation';
+
+const AboutMenu = () => {
+
+  const router = useRouter()
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = (event, id) => {
+    event.preventDefault()
+    if (id) router.push(id)
+    setAnchorEl(null);
+  };
+
+  return (
+    <>
+      <Button
+        id='about-button'
+        aria-controls={open ? "about-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        onClick={handleClick}
+        endIcon={<ArrowDropDown />}
+      >
+        About
+      </Button>
+      <Menu
+        id="about-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={e => handleClose(e)}
+        slotProps={{
+          list: {
+            "aria-labelledby": "about-button",
+          },
+        }}
+      >
+        <MenuItem onClick={e => handleClose(e, '/about')}>About Conduit</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/beliefs')}>Beliefs</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/kids')}>Kids</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/students')}>Students</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/college')}>College</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/marriage')}>Marraige and Family</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/contact-us')}>Contact Us</MenuItem>
+      </Menu>
+    </>
+  );
+};
+
+export default AboutMenu;

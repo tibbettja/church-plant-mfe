@@ -1,8 +1,8 @@
 
 
 const themeConfig = {
-  appName: 'Avail',
-  appDescription: 'Avail Church of Statesville NC',
+  appName: 'conduit',
+  appDescription: 'Conduit Church of Statesville NC',
   mode: 'dark',
   contentWidth: 'full',
   routingLoader: true,

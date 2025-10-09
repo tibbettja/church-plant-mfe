@@ -27,7 +27,7 @@ const Home = () => {
           <Grid size={{ xs: 12, md: 4 }} component={Card}>
             <CardHeader title="Plan your Visit" />
             <CardContent>
-              <Typography>We'd love for you to join us this Sunday!</Typography>
+              <Typography variant="body1">We'd love for you to join us this Sunday!</Typography>
             </CardContent>
             <CardActions disableSpacing>
               <Button variant="contained">Meet with us</Button>
@@ -36,7 +36,7 @@ const Home = () => {
           <Grid size={{ xs: 12, md: 4 }} component={Card}>
             <CardHeader title="Recent Messages" />
             <CardContent>
-              <Typography>
+              <Typography variant="body1">
                 Check out our recent messages or full worship service online!
               </Typography>
             </CardContent>
@@ -47,7 +47,7 @@ const Home = () => {
           <Grid size={{ xs: 12, md: 4 }} component={Card}>
             <CardHeader title="One Year Bible" />
             <CardContent>
-              <Typography>
+              <Typography variant="body1">
                 Spend time in God's Word with this daily Bible reading plan.
               </Typography>
             </CardContent>
@@ -59,11 +59,11 @@ const Home = () => {
       </Grid>
       <Grid size={12} sx={{ zIndex: 1 }} component={Paper}>
         <Grid container spacing={3} padding={10}>
-          <Grid offset={{ xs: 0, md: 3 }} size={{xs: 12, md: 3}}>
+          <Grid offset={{ xs: 0, sm: 0, md: 1, lg: 2 }} size={{xs: 12, sm: 12, md: 6, lg: 5, xl: 3}} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Image src={WorshipImage} alt="Community Worship" height={300} />
           </Grid>
           <Grid
-            size={{ xs: 12, md: 4}}
+            size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 6}}
             sx={{
               display: "flex",
               justifyContent: "flex-start",
