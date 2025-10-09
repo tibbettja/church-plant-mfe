@@ -16,7 +16,8 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_VERSION: pkg_config.version
-  }
+  },
+  basePath: '/church-plant-mfe'
 };
 
 export default nextConfig;
