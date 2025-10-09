@@ -6,6 +6,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  output: 'export',
   async redirects() {
     return [
       {
@@ -18,8 +19,8 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_VERSION: pkg_config.version
   },
-  basePath: isProd ? '/church-plant-mfe' : undefined,
-  assetPrefix: isProd ? '/church-plant-mfe' : undefined,
+  basePath: isProd ? '/church-plant-mfe' : '',
+  assetPrefix: isProd ? '/church-plant-mfe' : '',
   images: isProd ? {
     unoptimized: true
   } : undefined

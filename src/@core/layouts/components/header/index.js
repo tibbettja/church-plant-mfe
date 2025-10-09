@@ -15,11 +15,11 @@ import {
 import { Menu as MenuIcon } from "@mui/icons-material";
 import fonts from "@/@core/theme/fonts";
 import themeConfig from "@/configs/themeConfig";
-import Logo from 'public/images/conduit_logo.png'
 import AboutMenu from "./components/AboutMenu";
 import GrowMenu from "./components/GrowMenu";
 import NextLink from "next/link";
 import MobileMenu from "./components/MobileMenu";
+import nextConfig from "next.config.mjs";
 
 const Header = () => {
   const theme = useTheme();
@@ -36,7 +36,7 @@ const Header = () => {
     >
       <Grid size={{ xs: 6, md: 3 }} sx={{ display: 'flex', justifyContent: 'start', alignItems: 'center', gap: 3 }} className={fonts.logo.className}>
         <Link href='/' style={{ height: 50, width: 50 }} component={NextLink}>
-          <Image src={Logo} alt='Conduit Church Logo' height={50} width={50} />
+          <Image src={`${nextConfig.assetPrefix}/images/conduit_logo.png`} alt='Conduit Church Logo' height={50} width={50} />
         </Link>
         <Link href='/' component={NextLink}>
           <Typography variant="h3" sx={{ fontWeight: 800 }}>{themeConfig.appName}</Typography>

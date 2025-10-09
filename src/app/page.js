@@ -8,16 +8,15 @@ import {
   Button,
   Paper,
 } from "@mui/material";
+import nextConfig from "next.config.mjs";
 import Image from "next/image";
-import HeroImage from "public/images/home_hero.jpg";
-import WorshipImage from "public/images/worship.avif";
 
 const Home = () => {
   return (
     <Grid container padding={0} rowSpacing={5} columnSpacing={0}>
       <Grid size={12}>
         <Image
-          src={HeroImage}
+          src={`${nextConfig.assetPrefix}/images/home_hero.jpg`}
           alt="Bible and Coffee"
           style={{ maxWidth: "100%", height: "auto" }}
         />
@@ -60,7 +59,7 @@ const Home = () => {
       <Grid size={12} sx={{ zIndex: 1 }} component={Paper}>
         <Grid container spacing={3} padding={10}>
           <Grid offset={{ xs: 0, sm: 0, md: 1, lg: 2 }} size={{xs: 12, sm: 12, md: 6, lg: 5, xl: 3}} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Image src={WorshipImage} alt="Community Worship" height={300} />
+            <Image src={`${nextConfig.assetPrefix}/images/worship.avif`} alt="Community Worship" height={300} />
           </Grid>
           <Grid
             size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 6}}

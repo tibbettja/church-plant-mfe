@@ -14,9 +14,9 @@ import {
   useMediaQuery,
   Link
 } from "@mui/material";
-import Logo from "public/images/conduit_logo.png";
 import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 import themeConfig from "@/configs/themeConfig";
+import nextConfig from "next.config.mjs";
 
 const Footer = () => {
   const theme = useTheme();
@@ -134,7 +134,7 @@ const Footer = () => {
       >
         <Box sx={{ textAlign: isMobile ? "center" : "right" }}>
           <Image
-            src={Logo}
+            src={`${nextConfig.assetPrefix}/images/conduit_logo.png`}
             alt="logo"
             style={{ width: "100%", height: "auto", opacity: 0.25 }}
           />
