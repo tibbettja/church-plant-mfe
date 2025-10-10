@@ -48,10 +48,11 @@ const AboutMenu = () => {
       >
         <MenuItem onClick={e => handleClose(e, '/about')}>About Conduit</MenuItem>
         <MenuItem onClick={e => handleClose(e, '/beliefs')}>Beliefs</MenuItem>
-        <MenuItem onClick={e => handleClose(e, '/ministry/kids')}>Kids</MenuItem>
-        <MenuItem onClick={e => handleClose(e, '/ministry/students')}>Students</MenuItem>
-        <MenuItem onClick={e => handleClose(e, '/ministry/college')}>College</MenuItem>
-        <MenuItem onClick={e => handleClose(e, '/ministry/marriage')}>Marraige and Family</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/leadership')}>Leadership</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/kids')}>Conduit Kids</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/students')}>Overcharge Students</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/young-adults')}>Young Adults</MenuItem>
+        <MenuItem onClick={e => handleClose(e, '/ministry/marriage-family')}>Marraige and Family</MenuItem>
         <MenuItem onClick={e => handleClose(e, '/contact-us')}>Contact Us</MenuItem>
       </Menu>
     </>

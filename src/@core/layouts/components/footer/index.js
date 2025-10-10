@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import NextLink from "next/link";
 import {
   Grid,
@@ -35,11 +34,10 @@ const Footer = () => {
             </Typography>
           </ListItem>
           <ListItem>
-            <Link href="/about" title={`About ${themeConfig.appName.charAt(0).toUpperCase()}${themeConfig.appName.slice(1)}`} component={NextLink}>
+            <Link href="/about" title={`About ${themeConfig.appName}`} component={NextLink}>
               <Typography variant="subtitle1">
                 About{" "}
-                {themeConfig.appName.charAt(0).toUpperCase() +
-                  themeConfig.appName.slice(1)}
+                {themeConfig.appName}
               </Typography>
             </Link>
           </ListItem>
@@ -49,22 +47,27 @@ const Footer = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/kids" title="Kids" component={NextLink}>
-              <Typography variant="subtitle1">Kids</Typography>
+            <Link href="/leadership" title="Leadership" component={NextLink}>
+              <Typography variant="subtitle1">Leadership</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/students" title="Students" component={NextLink}>
-              <Typography variant="subtitle1">Students</Typography>
+            <Link href="/ministry/kids" title="Conduit Kids" component={NextLink}>
+              <Typography variant="subtitle1">Conduit Kids</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/college" title="College" component={NextLink}>
-              <Typography variant="subtitle1">College</Typography>
+            <Link href="/ministry/students" title="Overcharge Students" component={NextLink}>
+              <Typography variant="subtitle1">Overcharge Students</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/marriage" title="Marriage" component={NextLink}>
+            <Link href="/ministry/young-adults" title="Young Adults" component={NextLink}>
+              <Typography variant="subtitle1">Young Adults</Typography>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/ministry/marriage-family" title="Marriage and Family" component={NextLink}>
               <Typography variant="subtitle1">Marriage and Family</Typography>
             </Link>
           </ListItem>
@@ -133,7 +136,7 @@ const Footer = () => {
         }}
       >
         <Box sx={{ textAlign: isMobile ? "center" : "right" }}>
-          <Image
+          <img
             src={`${nextConfig.assetPrefix}/images/conduit_logo.png`}
             alt="logo"
             style={{ width: "100%", height: "auto", opacity: 0.25 }}
@@ -171,8 +174,7 @@ const Footer = () => {
       <Grid size={12}>
         <Divider sx={{ textAlign: "right" }}>
           &copy;{" "}
-          {themeConfig.appName.charAt(0).toUpperCase() +
-            themeConfig.appName.slice(1)}{" "}
+          {themeConfig.appName}{" "}
           Church 2025
         </Divider>
       </Grid>

@@ -9,13 +9,12 @@ import {
   Paper,
 } from "@mui/material";
 import nextConfig from "next.config.mjs";
-import Image from "next/image";
 
 const Home = () => {
   return (
     <Grid container padding={0} rowSpacing={5} columnSpacing={0}>
       <Grid size={12}>
-        <Image
+        <img
           src={`${nextConfig.assetPrefix}/images/home_hero.jpg`}
           alt="Bible and Coffee"
           style={{ maxWidth: "100%", height: "auto" }}
@@ -26,7 +25,9 @@ const Home = () => {
           <Grid size={{ xs: 12, md: 4 }} component={Card}>
             <CardHeader title="Plan your Visit" />
             <CardContent>
-              <Typography variant="body1">We'd love for you to join us this Sunday!</Typography>
+              <Typography variant="body1">
+                We'd love for you to join us this Sunday!
+              </Typography>
             </CardContent>
             <CardActions disableSpacing>
               <Button variant="contained">Meet with us</Button>
@@ -58,11 +59,23 @@ const Home = () => {
       </Grid>
       <Grid size={12} sx={{ zIndex: 1 }} component={Paper}>
         <Grid container spacing={3} padding={10}>
-          <Grid offset={{ xs: 0, sm: 0, md: 1, lg: 2 }} size={{xs: 12, sm: 12, md: 6, lg: 5, xl: 3}} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Image src={`${nextConfig.assetPrefix}/images/worship.avif`} alt="Community Worship" height={300} />
+          <Grid
+            offset={{ xs: 0, sm: 0, md: 1, lg: 2 }}
+            size={{ xs: 12, sm: 12, md: 6, lg: 5, xl: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={`${nextConfig.assetPrefix}/images/worship.avif`}
+              alt="Community Worship"
+              height={300}
+            />
           </Grid>
           <Grid
-            size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 6}}
+            size={{ xs: 12, sm: 12, md: 5, lg: 5, xl: 6 }}
             sx={{
               display: "flex",
               justifyContent: "flex-start",

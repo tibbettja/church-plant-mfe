@@ -2,8 +2,11 @@
 
 import * as React from 'react'
 
-import { styled, Box } from '@mui/material'
+import { styled, Box, Grid } from '@mui/material'
 import Footer from './components/footer'
+import Header from './components/header'
+import LeftBar from './components/left-bar'
+import RightBar from './components/right-bar'
 import themeConfig from '@/configs/themeConfig'
 
 const WikiLayoutWrapper = styled('div')(({ theme }) => ({
@@ -36,15 +39,23 @@ const ContentWrapper = styled('main')(({ theme }) => ({
   marginTop: theme.spacing(12)
 }))
 
-const WikiLayout = ({ children }) => {
+const WikiLayout = ({ children, leftBar, rightBar }) => {
   return (
     <>
       <WikiLayoutWrapper>
         <Header />
         <MainContentWrapper>
-          <LeftBar />
-          <ContentWrapper>{children}</ContentWrapper>
-          <RightBar />
+          <Grid container sx={{width: '100%'}}>
+            <Grid size={1}>
+              <LeftBar {...leftBar} />
+            </Grid>
+            <Grid size={10}>
+              <ContentWrapper>{children}</ContentWrapper>
+            </Grid>
+            <Grid size={1}>
+              <RightBar {...rightBar} />
+            </Grid>
+          </Grid>
         </MainContentWrapper>
         <Footer />
       </WikiLayoutWrapper>

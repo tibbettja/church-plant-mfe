@@ -56,9 +56,8 @@ const Typography = (theme) => {
       fontFamily: fonts.body.style.fontFamily
     },
     body2: {
-      lineHeight: 1.5,
       letterSpacing: '0.15px',
-      fontSize: '16pt',
+      fontSize: '14pt',
       color: theme.palette.text.secondary,
       fontWeight: 800,
       fontFamily: fonts.body.style.fontFamily

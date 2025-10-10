@@ -1,7 +1,7 @@
 
 
 const themeConfig = {
-  appName: 'conduit',
+  appName: 'Conduit',
   appDescription: 'Conduit Church of Statesville NC',
   mode: 'dark',
   contentWidth: 'full',
@@ -9,7 +9,8 @@ const themeConfig = {
   menuTextTruncate: true,
   navigationSize: 250,
   disableRipple: false,
-  verticalNavToggleType: 'collapse'
+  verticalNavToggleType: 'collapse',
+  studentsName: 'Overcharge'
 }
 
 export default themeConfig

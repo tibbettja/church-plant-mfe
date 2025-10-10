@@ -39,7 +39,7 @@ const Header = () => {
           <Image src={`${nextConfig.assetPrefix}/images/conduit_logo.png`} alt='Conduit Church Logo' height={50} width={50} />
         </Link>
         <Link href='/' component={NextLink}>
-          <Typography variant="h3" sx={{ fontWeight: 800 }}>{themeConfig.appName}</Typography>
+          <Typography variant="h3" sx={{ fontWeight: 800, textTransform: 'lowercase' }}>{themeConfig.appName}</Typography>
         </Link>
       </Grid>
       {!isMobile && (
@@ -54,9 +54,9 @@ const Header = () => {
         >
           <AboutMenu />
           <GrowMenu />
-          <Link href="/visit" title="Visit"><Button variant='outlined'>Visit</Button></Link>
-          <Link href="/events" title="Events"><Button>Events</Button></Link>
-          <Link href="/give" title="Give"><Button>Give</Button></Link>
+          <Link href="/visit" title="Visit" component={NextLink}><Button variant='outlined'>Visit</Button></Link>
+          <Link href="/events" title="Events" component={NextLink}><Button>Events</Button></Link>
+          <Link href="/give" title="Give" component={NextLink}><Button>Give</Button></Link>
         </Grid>
       )}
       { isMobile && (

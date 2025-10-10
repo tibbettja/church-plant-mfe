@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  output: 'export',
+  output: isProd ? 'export' : 'standalone',
   async redirects() {
     return [
       {

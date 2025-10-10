@@ -10,18 +10,10 @@ const Card = (theme) => ({
         borderRadius: '1px',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
-        variants: [
-          {
-            props: { raised: true },
-            style: {
-              boxShadow: `inset 0 0 0.5em 0 ${theme.palette.info.dark}, 0 0 0.5em 0 ${theme.palette.info.main}`,
-              border: `solid 1px ${theme.palette.info.light}`,
-              color: theme.palette.info.light,
-              backgroundColor: 'transparent'
-            }
-          }
-        ]
+        justifyContent: 'start',
+        '& .MuiCard-root:has(> *:nth-child(3))': {
+          justifyContent: 'space-between',
+        }
       }
     }
   },
@@ -33,18 +25,9 @@ const Card = (theme) => ({
           paddingTop: 0
         }
       },
-      title: {
-        lineHeight: 1,
-        fontWeight: 500,
-        fontSize: '20pt',
-        letterSpacing: '0.0125em'
-      },
       action: {
         marginTop: 0,
         marginRight: 0
-      },
-      subheader: {
-        fontSize: '10pt'
       }
     }
   },

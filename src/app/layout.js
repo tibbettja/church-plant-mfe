@@ -6,6 +6,8 @@ import ThemeComponent from "@/@core/theme/ThemeComponent";
 
 import fonts from "@/@core/theme/fonts";
 
+import themeConfig from "@/configs/themeConfig";
+
 const initialThemeSettings = {
   themeColor: "primary",
   mode: "light",
@@ -27,3 +29,19 @@ const ServerApp = ({ children }) => {
 };
 
 export default ServerApp;
+
+export const metadata = {
+  title: themeConfig.appDescription,
+  description: themeConfig.appDescription
+}
+
+export const viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f1f2f6' },
+    { media: '(prefers-color-scheme: dark)', color: '#000405' }
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+}
