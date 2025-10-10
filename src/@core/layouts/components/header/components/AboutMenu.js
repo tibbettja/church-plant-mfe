@@ -58,7 +58,7 @@ const AboutMenu = () => {
           Young Adults
         </MenuItem>
         <MenuItem onClick={(e) => handleClose(e, "/ministry/marriage-family")}>
-          Marraige and Family
+          Marraige & Family
         </MenuItem>
         <MenuItem onClick={(e) => handleClose(e, "/contact-us")}>
           Contact Us

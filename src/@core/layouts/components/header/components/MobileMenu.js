@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Menu, MenuItem, IconButton } from "@mui/material";
+import { Menu, MenuItem, IconButton, Divider } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import { useRouter } from "next/navigation";
 
@@ -48,10 +48,54 @@ const MobileMenu = () => {
         }}
       >
         <MenuItem onClick={(e) => handleClose(e, "/about")}>About</MenuItem>
+        <Divider variant="middle" flexItem />
+        <MenuItem onClick={(e) => handleClose(e, "/beliefs")}>Beliefs</MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/leadership")}>
+          Leadership
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/ministry/kids")}>
+          Conduit Kids
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/ministry/students")}>
+          Overcharge Students
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/ministry/young-adults")}>
+          Young Adults
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/ministry/marriage-family")}>
+          Marriage & Family
+        </MenuItem>
+        <Divider variant="middle" flexItem />
         <MenuItem onClick={(e) => handleClose(e, "/grow")}>Grow</MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/next-steps")}>
+          Next Steps
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/grow/baptism")}>
+          Baptism
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/grow/discipleship")}>
+          Discipleship
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/grow/serve-team")}>
+          Serve Team
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/grow/small-groups")}>
+          Small Groups
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/prayer-wall")}>
+          Prayer Wall
+        </MenuItem>
+        <MenuItem onClick={(e) => handleClose(e, "/your-story")}>
+          Share Your Story
+        </MenuItem>
+        <Divider variant="middle" flexItem />
         <MenuItem onClick={(e) => handleClose(e, "/visit")}>Visit</MenuItem>
         <MenuItem onClick={(e) => handleClose(e, "/events")}>Events</MenuItem>
         <MenuItem onClick={(e) => handleClose(e, "/give")}>Give</MenuItem>
+        <Divider variant="middle" flexItem />
+        <MenuItem onClick={(e) => handleClose(e, "/contact-us")}>
+          Contact Us
+        </MenuItem>
       </Menu>
     </>
   );

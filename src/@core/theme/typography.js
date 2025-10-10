@@ -70,15 +70,15 @@ const Typography = (theme) => {
     },
     caption: {
       letterSpacing: "0.4px",
-      fontSize: "8pt",
+      fontSize: "12pt",
       color: theme.palette.text.secondary,
-      fontFamily: fonts.subtitle.style.fontFamily,
+      fontFamily: fonts.body.style.fontFamily,
     },
     overline: {
       letterSpacing: "1px",
-      fontSize: "8pt",
+      fontSize: "10pt",
       color: theme.palette.text.secondary,
-      fontFamily: fonts.subtitle.style.fontFamily,
+      fontFamily: fonts.body.style.fontFamily,
     },
   };
 };

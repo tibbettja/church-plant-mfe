@@ -30,7 +30,7 @@ const Footer = () => {
               sx={{ color: theme.palette.secondary.main }}
               variant="body2"
             >
-              About
+              <b>About</b>
             </Typography>
           </ListItem>
           <ListItem>
@@ -39,19 +39,19 @@ const Footer = () => {
               title={`About ${themeConfig.appName}`}
               component={NextLink}
             >
-              <Typography variant="subtitle1">
+              <Typography variant="caption">
                 About {themeConfig.appName}
               </Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link href="/beliefs" title="Beliefs" component={NextLink}>
-              <Typography variant="subtitle1">Beliefs</Typography>
+              <Typography variant="caption">Beliefs</Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link href="/leadership" title="Leadership" component={NextLink}>
-              <Typography variant="subtitle1">Leadership</Typography>
+              <Typography variant="caption">Leadership</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -60,7 +60,7 @@ const Footer = () => {
               title="Conduit Kids"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Conduit Kids</Typography>
+              <Typography variant="caption">Conduit Kids</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -69,7 +69,7 @@ const Footer = () => {
               title="Overcharge Students"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Overcharge Students</Typography>
+              <Typography variant="caption">Overcharge Students</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -78,7 +78,7 @@ const Footer = () => {
               title="Young Adults"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Young Adults</Typography>
+              <Typography variant="caption">Young Adults</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -87,12 +87,12 @@ const Footer = () => {
               title="Marriage and Family"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Marriage and Family</Typography>
+              <Typography variant="caption">Marriage and Family</Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link href="/contact-us" title="Contact Us" component={NextLink}>
-              <Typography variant="subtitle1">Contact Us</Typography>
+              <Typography variant="caption">Contact Us</Typography>
             </Link>
           </ListItem>
         </List>
@@ -104,17 +104,17 @@ const Footer = () => {
               sx={{ color: theme.palette.secondary.main }}
               variant="body2"
             >
-              Next Steps
+              <b>Next Steps</b>
             </Typography>
           </ListItem>
           <ListItem>
             <Link href="/next-steps" title="Next Steps" component={NextLink}>
-              <Typography variant="subtitle1">Next Steps</Typography>
+              <Typography variant="caption">Next Steps</Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link href="/grow/baptism" title="Baptism" component={NextLink}>
-              <Typography variant="subtitle1">Baptism</Typography>
+              <Typography variant="caption">Baptism</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -123,7 +123,7 @@ const Footer = () => {
               title="Discipleship"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Discipleship</Typography>
+              <Typography variant="caption">Discipleship</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -132,7 +132,7 @@ const Footer = () => {
               title="Serve Team"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Serve Team</Typography>
+              <Typography variant="caption">Serve Team</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -141,12 +141,12 @@ const Footer = () => {
               title="Small Groups"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Small Groups</Typography>
+              <Typography variant="caption">Small Groups</Typography>
             </Link>
           </ListItem>
           <ListItem>
             <Link href="/prayer-wall" title="Prayer Wall" component={NextLink}>
-              <Typography variant="subtitle1">Prayer Wall</Typography>
+              <Typography variant="caption">Prayer Wall</Typography>
             </Link>
           </ListItem>
           <ListItem>
@@ -155,7 +155,7 @@ const Footer = () => {
               title="Share Your Story"
               component={NextLink}
             >
-              <Typography variant="subtitle1">Share Your Story</Typography>
+              <Typography variant="caption">Share Your Story</Typography>
             </Link>
           </ListItem>
         </List>
