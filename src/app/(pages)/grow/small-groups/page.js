@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Small Groups | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

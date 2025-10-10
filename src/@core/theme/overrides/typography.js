@@ -7,7 +7,7 @@ const Typography = (theme) => ({
         gutterBottom: {
           marginBottom: theme.spacing(2),
         },
-      }
+      },
     },
   },
 });

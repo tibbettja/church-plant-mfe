@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Baptism | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

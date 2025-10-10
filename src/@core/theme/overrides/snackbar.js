@@ -2,10 +2,13 @@ const Snackbar = (theme) => ({
   MuiSnackbarContent: {
     styleOverrides: {
       root: {
-        backgroundColor: theme.palette.mode === 'light' ? theme.palette.grey[900] : theme.palette.grey[100]
-      }
-    }
-  }
-})
+        backgroundColor:
+          theme.palette.mode === "light"
+            ? theme.palette.grey[900]
+            : theme.palette.grey[100],
+      },
+    },
+  },
+});
 
-export default Snackbar
+export default Snackbar;

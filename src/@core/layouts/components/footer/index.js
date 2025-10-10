@@ -11,7 +11,7 @@ import {
   IconButton,
   Divider,
   useMediaQuery,
-  Link
+  Link,
 } from "@mui/material";
 import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 import themeConfig from "@/configs/themeConfig";
@@ -34,10 +34,13 @@ const Footer = () => {
             </Typography>
           </ListItem>
           <ListItem>
-            <Link href="/about" title={`About ${themeConfig.appName}`} component={NextLink}>
+            <Link
+              href="/about"
+              title={`About ${themeConfig.appName}`}
+              component={NextLink}
+            >
               <Typography variant="subtitle1">
-                About{" "}
-                {themeConfig.appName}
+                About {themeConfig.appName}
               </Typography>
             </Link>
           </ListItem>
@@ -52,22 +55,38 @@ const Footer = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/kids" title="Conduit Kids" component={NextLink}>
+            <Link
+              href="/ministry/kids"
+              title="Conduit Kids"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Conduit Kids</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/students" title="Overcharge Students" component={NextLink}>
+            <Link
+              href="/ministry/students"
+              title="Overcharge Students"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Overcharge Students</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/young-adults" title="Young Adults" component={NextLink}>
+            <Link
+              href="/ministry/young-adults"
+              title="Young Adults"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Young Adults</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/ministry/marriage-family" title="Marriage and Family" component={NextLink}>
+            <Link
+              href="/ministry/marriage-family"
+              title="Marriage and Family"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Marriage and Family</Typography>
             </Link>
           </ListItem>
@@ -99,17 +118,29 @@ const Footer = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/grow/discipleship" title="Discipleship" component={NextLink}>
+            <Link
+              href="/grow/discipleship"
+              title="Discipleship"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Discipleship</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/grow/serve-team" title="Serve Team" component={NextLink}>
+            <Link
+              href="/grow/serve-team"
+              title="Serve Team"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Serve Team</Typography>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/grow/small-groups" title="Small Groups" component={NextLink}>
+            <Link
+              href="/grow/small-groups"
+              title="Small Groups"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Small Groups</Typography>
             </Link>
           </ListItem>
@@ -119,7 +150,11 @@ const Footer = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/your-story" title="Share Your Story" component={NextLink}>
+            <Link
+              href="/your-story"
+              title="Share Your Story"
+              component={NextLink}
+            >
               <Typography variant="subtitle1">Share Your Story</Typography>
             </Link>
           </ListItem>
@@ -173,9 +208,7 @@ const Footer = () => {
       </Grid>
       <Grid size={12}>
         <Divider sx={{ textAlign: "right" }}>
-          &copy;{" "}
-          {themeConfig.appName}{" "}
-          Church 2025
+          &copy; {themeConfig.appName} Church 2025
         </Divider>
       </Grid>
     </Grid>

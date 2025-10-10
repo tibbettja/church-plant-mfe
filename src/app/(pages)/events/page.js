@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Events | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

@@ -70,11 +70,7 @@ const Page = () => {
           <CardHeader
             title="Know God"
             subheader={
-              <Link
-                component={NextLink}
-                href="/events"
-                title="Events"
-              >
+              <Link component={NextLink} href="/events" title="Events">
                 Weekend Services
               </Link>
             }
@@ -174,8 +170,15 @@ const Page = () => {
         <Grid size={12}>
           <Divider />
         </Grid>
-        <Grid size={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Link href='/about/statement-of-faith' title='Statement of Faith' component={NextLink}>
+        <Grid
+          size={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link href="/beliefs" title="Statement of Faith" component={NextLink}>
             <Button variant="outlined">Statement of Faith</Button>
           </Link>
         </Grid>
@@ -188,5 +191,5 @@ export default Page;
 
 export const metadata = {
   title: `About | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

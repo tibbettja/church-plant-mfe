@@ -32,16 +32,16 @@ export default ServerApp;
 
 export const metadata = {
   title: themeConfig.appDescription,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};
 
 export const viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f1f2f6' },
-    { media: '(prefers-color-scheme: dark)', color: '#000405' }
+    { media: "(prefers-color-scheme: light)", color: "#f1f2f6" },
+    { media: "(prefers-color-scheme: dark)", color: "#000405" },
   ],
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false
-}
+  userScalable: false,
+};

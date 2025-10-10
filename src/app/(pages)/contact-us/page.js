@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Contact Us | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

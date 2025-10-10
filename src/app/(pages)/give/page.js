@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Give | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

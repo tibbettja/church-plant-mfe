@@ -32,14 +32,40 @@ const Header = () => {
       paddingX={6}
       paddingY={2}
       component={Paper}
-      sx={{ position: 'fixed', top: 0, left: 0, zIndex: 2, width: '100%', borderBottom: `solid 4px ${theme.palette.secondary.main}`}}
+      sx={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 2,
+        width: "100%",
+        borderBottom: `solid 4px ${theme.palette.secondary.main}`,
+      }}
     >
-      <Grid size={{ xs: 6, md: 3 }} sx={{ display: 'flex', justifyContent: 'start', alignItems: 'center', gap: 3 }} className={fonts.logo.className}>
-        <Link href='/' style={{ height: 50, width: 50 }} component={NextLink}>
-          <Image src={`${nextConfig.assetPrefix}/images/conduit_logo.png`} alt='Conduit Church Logo' height={50} width={50} />
+      <Grid
+        size={{ xs: 6, md: 3 }}
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          gap: 3,
+        }}
+        className={fonts.logo.className}
+      >
+        <Link href="/" style={{ height: 50, width: 50 }} component={NextLink}>
+          <Image
+            src={`${nextConfig.assetPrefix}/images/conduit_logo.png`}
+            alt="Conduit Church Logo"
+            height={50}
+            width={50}
+          />
         </Link>
-        <Link href='/' component={NextLink}>
-          <Typography variant="h3" sx={{ fontWeight: 800, textTransform: 'lowercase' }}>{themeConfig.appName}</Typography>
+        <Link href="/" component={NextLink}>
+          <Typography
+            variant="h3"
+            sx={{ fontWeight: 800, textTransform: "lowercase" }}
+          >
+            {themeConfig.appName}
+          </Typography>
         </Link>
       </Grid>
       {!isMobile && (
@@ -54,12 +80,18 @@ const Header = () => {
         >
           <AboutMenu />
           <GrowMenu />
-          <Link href="/visit" title="Visit" component={NextLink}><Button variant='outlined'>Visit</Button></Link>
-          <Link href="/events" title="Events" component={NextLink}><Button>Events</Button></Link>
-          <Link href="/give" title="Give" component={NextLink}><Button>Give</Button></Link>
+          <Link href="/visit" title="Visit" component={NextLink}>
+            <Button variant="outlined">Visit</Button>
+          </Link>
+          <Link href="/events" title="Events" component={NextLink}>
+            <Button>Events</Button>
+          </Link>
+          <Link href="/give" title="Give" component={NextLink}>
+            <Button>Give</Button>
+          </Link>
         </Grid>
       )}
-      { isMobile && (
+      {isMobile && (
         <Grid
           size={{ xs: 6, md: 3 }}
           sx={{

@@ -2,12 +2,12 @@ const Paper = () => ({
   MuiPaper: {
     styleOverrides: {
       root: {
-        backgroundImage: 'none',
+        backgroundImage: "none",
         borderRadius: 0,
-        boxShadow: 'unset'
-      }
-    }
-  }
-})
+        boxShadow: "unset",
+      },
+    },
+  },
+});
 
-export default Paper
+export default Paper;

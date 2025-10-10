@@ -2,10 +2,10 @@ const Rating = (theme) => ({
   MuiRating: {
     styleOverrides: {
       root: {
-        color: theme.palette.attention.main
-      }
-    }
-  }
-})
+        color: theme.palette.attention.main,
+      },
+    },
+  },
+});
 
-export default Rating
+export default Rating;

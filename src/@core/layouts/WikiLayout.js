@@ -1,43 +1,43 @@
-'use client'
+"use client";
 
-import * as React from 'react'
+import * as React from "react";
 
-import { styled, Box, Grid } from '@mui/material'
-import Footer from './components/footer'
-import Header from './components/header'
-import LeftBar from './components/left-bar'
-import RightBar from './components/right-bar'
-import themeConfig from '@/configs/themeConfig'
+import { styled, Box, Grid } from "@mui/material";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import LeftBar from "./components/left-bar";
+import RightBar from "./components/right-bar";
+import themeConfig from "@/configs/themeConfig";
 
-const WikiLayoutWrapper = styled('div')(({ theme }) => ({
-  height: '100%',
-  display: 'flex',
+const WikiLayoutWrapper = styled("div")(({ theme }) => ({
+  height: "100%",
+  display: "flex",
   backgroundColor: theme.palette.background.default,
-  paddingBottom: theme.spacing(14)
-}))
+  paddingBottom: theme.spacing(14),
+}));
 
 const MainContentWrapper = styled(Box)({
   flexGrow: 1,
   minWidth: 0,
-  display: 'flex',
-  minHeight: '100vh',
-  flexDirection: 'column'
-})
+  display: "flex",
+  minHeight: "100vh",
+  flexDirection: "column",
+});
 
-const ContentWrapper = styled('main')(({ theme }) => ({
+const ContentWrapper = styled("main")(({ theme }) => ({
   flexGrow: 1,
-  width: '100%',
+  width: "100%",
   padding: theme.spacing(6),
-  transition: 'padding .25s ease-in-out',
-  [theme.breakpoints.down('sm')]: {
-    paddingX: theme.spacing(4)
+  transition: "padding .25s ease-in-out",
+  [theme.breakpoints.down("sm")]: {
+    paddingX: theme.spacing(4),
   },
-  [theme.breakpoints.up('lg')]: {
+  [theme.breakpoints.up("lg")]: {
     marginLeft: themeConfig.navigationSize,
-    width: `calc(100vw - ${themeConfig.navigationSize}px)`
+    width: `calc(100vw - ${themeConfig.navigationSize}px)`,
   },
-  marginTop: theme.spacing(12)
-}))
+  marginTop: theme.spacing(12),
+}));
 
 const WikiLayout = ({ children, leftBar, rightBar }) => {
   return (
@@ -45,7 +45,7 @@ const WikiLayout = ({ children, leftBar, rightBar }) => {
       <WikiLayoutWrapper>
         <Header />
         <MainContentWrapper>
-          <Grid container sx={{width: '100%'}}>
+          <Grid container sx={{ width: "100%" }}>
             <Grid size={1}>
               <LeftBar {...leftBar} />
             </Grid>
@@ -60,7 +60,7 @@ const WikiLayout = ({ children, leftBar, rightBar }) => {
         <Footer />
       </WikiLayoutWrapper>
     </>
-  )
-}
+  );
+};
 
-export default WikiLayout
+export default WikiLayout;

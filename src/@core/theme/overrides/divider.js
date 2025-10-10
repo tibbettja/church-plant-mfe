@@ -3,11 +3,11 @@ const Divider = (theme) => ({
     styleOverrides: {
       root: {
         margin: `${theme.spacing(2)} 0`,
-        fontSize: '10pt',
-        color: theme.palette.text.disabled
-      }
-    }
-  }
-})
+        fontSize: "10pt",
+        color: theme.palette.text.disabled,
+      },
+    },
+  },
+});
 
-export default Divider
+export default Divider;

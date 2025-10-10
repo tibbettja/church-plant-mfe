@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Marriage & Family | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

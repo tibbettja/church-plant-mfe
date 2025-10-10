@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Serve Team | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

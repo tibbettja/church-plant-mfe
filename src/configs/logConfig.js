@@ -1,8 +1,8 @@
 const logLevelData = {
-  '*': 'info',
-  SSR: 'info',
-  API: 'info',
-  AUTH: 'warn'
-}
+  "*": "info",
+  SSR: "info",
+  API: "info",
+  AUTH: "warn",
+};
 
-export default logLevelData
+export default logLevelData;

@@ -1,108 +1,106 @@
-
-
 const DefaultPalette = (mode) => {
-  const lightColor = '58, 53, 65'
-  const darkColor = '255, 255, 255'
-  const mainColor = mode === 'light' ? lightColor : darkColor
+  const lightColor = "58, 53, 65";
+  const darkColor = "255, 255, 255";
+  const mainColor = mode === "light" ? lightColor : darkColor;
 
   return {
     customColors: {
       main: `rgba(${mainColor}, 1)`,
-      primaryGradient: '#012160',
-      tableHeaderBg: mode === 'light' ? '#F9FAFC' : '#3D3759'
+      primaryGradient: "#012160",
+      tableHeaderBg: mode === "light" ? "#F9FAFC" : "#3D3759",
     },
     common: {
-      black: '#000',
-      white: '#FFF'
+      black: "#000",
+      white: "#FFF",
     },
     mode,
     primary: {
-      light: '#0072bb', //
-      main: '#0072bb', // 
-      dark: '#0072bb', //
-      contrastText: '#FFF'
+      light: "#0072bb", //
+      main: "#0072bb", //
+      dark: "#0072bb", //
+      contrastText: "#FFF",
     },
     secondary: {
-      light: '#7ba05b', //
-      main: '#7ba05b', // 
-      dark: '#7ba05b', //
-      contrastText: '#000'
+      light: "#7ba05b", //
+      main: "#7ba05b", //
+      dark: "#7ba05b", //
+      contrastText: "#000",
     },
     info: {
-      light: '#ff8600', //
-      main: '#ff8600', //
-      dark: '#ff8600', //
-      contrastText: '#000'
+      light: "#ff8600", //
+      main: "#ff8600", //
+      dark: "#ff8600", //
+      contrastText: "#000",
     },
     success: {
-      light: '#328558', //
-      main: '#296B47', // Darmouth Green
-      dark: '#276844', //
-      contrastText: '#FFF'
+      light: "#328558", //
+      main: "#296B47", // Darmouth Green
+      dark: "#276844", //
+      contrastText: "#FFF",
     },
     attention: {
-      light: '#ffe91f', //
-      main: '#fee400', // Canary
-      dark: '#f5dc00', //
-      contrastText: '#000'
+      light: "#ffe91f", //
+      main: "#fee400", // Canary
+      dark: "#f5dc00", //
+      contrastText: "#000",
     },
     warning: {
-      light: '#e99520', //
-      main: '#d28415', // Fulvous
-      dark: '#cc8014', //
-      contrastText: '#000'
+      light: "#e99520", //
+      main: "#d28415", // Fulvous
+      dark: "#cc8014", //
+      contrastText: "#000",
     },
     error: {
-      light: '#D92716', // Chili Red
-      main: '#AE2012', // Rufous
-      dark: '#82170D', // Barn Red
-      contrastText: '#FFF'
+      light: "#D92716", // Chili Red
+      main: "#AE2012", // Rufous
+      dark: "#82170D", // Barn Red
+      contrastText: "#FFF",
     },
     grey: {
-      50: '#FAFAFA',
-      100: '#F5F5F5',
-      200: '#EEEEEE',
-      250: '#E8E8E8',
-      300: '#E0E0E0',
-      400: '#BDBDBD',
-      500: '#9E9E9E',
-      600: '#757575',
-      700: '#616161',
-      800: '#424242',
-      900: '#212121',
-      A100: '#D5D5D5',
-      A200: '#AAAAAA',
-      A400: '#616161',
-      A700: '#303030',
-      light: '#D5D5D5',
-      main: '#AAAAAA',
-      dark: '#616161',
-      contrastText: '#000'
+      50: "#FAFAFA",
+      100: "#F5F5F5",
+      200: "#EEEEEE",
+      250: "#E8E8E8",
+      300: "#E0E0E0",
+      400: "#BDBDBD",
+      500: "#9E9E9E",
+      600: "#757575",
+      700: "#616161",
+      800: "#424242",
+      900: "#212121",
+      A100: "#D5D5D5",
+      A200: "#AAAAAA",
+      A400: "#616161",
+      A700: "#303030",
+      light: "#D5D5D5",
+      main: "#AAAAAA",
+      dark: "#616161",
+      contrastText: "#000",
     },
     bright: {
-      light: '#FFFFFF',
-      main: '#FFFFFF',
-      dark: '#FFFFFF',
-      contrastText: '#000'
+      light: "#FFFFFF",
+      main: "#FFFFFF",
+      dark: "#FFFFFF",
+      contrastText: "#000",
     },
     text: {
       primary: `rgba(${mainColor}, 0.93)`,
       secondary: `rgba(${mainColor}, 0.74)`,
       disabled: `rgba(${mainColor}, 0.57)`,
-      lightPrimary: `rgba(${lightColor}, 0.93)`
+      lightPrimary: `rgba(${lightColor}, 0.93)`,
     },
     divider: `rgba(${mainColor}, 0.12)`,
     background: {
-      paper: mode === 'light' ? '#ffffff' : '#001219',
-      default: mode === 'light' ? '#f1f2f6' : '#000405',
+      paper: mode === "light" ? "#ffffff" : "#001219",
+      default: mode === "light" ? "#f1f2f6" : "#000405",
       light: {
-        paper: '#FFEDDB',
-        default: '#E8D8C8'
+        paper: "#FFEDDB",
+        default: "#E8D8C8",
       },
       dark: {
-        paper: '#001219',
-        default: '#000405'
-      }
+        paper: "#001219",
+        default: "#000405",
+      },
     },
     action: {
       active: `rgba(${mainColor}, 0.54)`,
@@ -110,12 +108,12 @@ const DefaultPalette = (mode) => {
       selected: `rgba(${mainColor}, 0.08)`,
       disabled: `rgba(${mainColor}, 0.30)`,
       disabledBackground: `rgba(${mainColor}, 0.18)`,
-      focus: `rgba(${mainColor}, 0.12)`
-    }
-  }
-}
+      focus: `rgba(${mainColor}, 0.12)`,
+    },
+  };
+};
 
-export default DefaultPalette
+export default DefaultPalette;
 
 // export type PaletteProps = 'light' | 'dark'
 

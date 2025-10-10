@@ -2,16 +2,16 @@ const Chip = (theme) => ({
   MuiChip: {
     styleOverrides: {
       outlined: {
-        '& .MuiChip-colorDefault': {
-          borderColor: `rgba(${theme.palette.customColors.main}, 0.22)`
-        }
+        "& .MuiChip-colorDefault": {
+          borderColor: `rgba(${theme.palette.customColors.main}, 0.22)`,
+        },
       },
       deleteIcon: {
         width: 18,
-        height: 18
-      }
-    }
-  }
-})
+        height: 18,
+      },
+    },
+  },
+});
 
-export default Chip
+export default Chip;

@@ -36,5 +36,5 @@ export default Page;
 
 export const metadata = {
   title: `Young Adults | ${themeConfig.appDescription}`,
-  description: themeConfig.appDescription
-}
+  description: themeConfig.appDescription,
+};

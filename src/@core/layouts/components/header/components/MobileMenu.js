@@ -11,11 +11,10 @@ const MobileMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
-      
     setAnchorEl(event.currentTarget);
   };
   const handleClose = (event, id) => {
-    event.preventDefault()
+    event.preventDefault();
     if (id) router.push(id);
     setAnchorEl(null);
   };
@@ -36,16 +35,16 @@ const MobileMenu = () => {
         id="about-menu"
         anchorEl={anchorEl}
         open={open}
-        onClose={e => handleClose(e)}
+        onClose={(e) => handleClose(e)}
         slotProps={{
           list: {
             "aria-labelledby": "about-button",
           },
           paper: {
             sx: {
-              width: 'calc(100vw - 36px)'
-            }
-          }
+              width: "calc(100vw - 36px)",
+            },
+          },
         }}
       >
         <MenuItem onClick={(e) => handleClose(e, "/about")}>About</MenuItem>

@@ -1,3 +1,3 @@
-const GlobalStyling = () => ({})
+const GlobalStyling = () => ({});
 
-export default GlobalStyling
+export default GlobalStyling;

@@ -2,12 +2,12 @@ const Popover = (theme) => ({
   MuiPopover: {
     styleOverrides: {
       root: {
-        '& .MuiPopover-paper': {
-          boxShadow: theme.shadows[6]
-        }
-      }
-    }
-  }
-})
+        "& .MuiPopover-paper": {
+          boxShadow: theme.shadows[6],
+        },
+      },
+    },
+  },
+});
 
-export default Popover
+export default Popover;
