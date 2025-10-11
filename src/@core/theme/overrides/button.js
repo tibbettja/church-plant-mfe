@@ -5,7 +5,7 @@ const Button = (theme) => ({
     styleOverrides: {
       root: {
         fontWeight: 400,
-        borderRadius: 5,
+        borderRadius: 2,
         lineHeight: 1.71,
         letterSpacing: "1px",
         padding: `${theme.spacing(1, 2)}`,

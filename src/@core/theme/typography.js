@@ -3,39 +3,45 @@ import fonts from "./fonts";
 const Typography = (theme) => {
   return {
     h1: {
-      fontWeight: 700,
+      fontWeight: 500,
       fontSize: "40pt",
       letterSpacing: "-1.5px",
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     h2: {
-      fontWeight: 500,
+      fontWeight: 300,
       fontSize: "36pt",
       letterSpacing: "-0.5px",
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     h3: {
-      fontWeight: 500,
+      fontWeight: 300,
       fontSize: "32pt",
       letterSpacing: 0,
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     h4: {
-      fontWeight: 500,
+      fontWeight: 300,
       fontSize: "28pt",
       letterSpacing: "0.25px",
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     h5: {
-      fontWeight: 500,
+      fontWeight: 300,
       fontSize: "24pt",
       letterSpacing: 0,
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     h6: {
       letterSpacing: "0.15px",
       fontSize: "20pt",
       color: theme.palette.text.primary,
+      fontFamily: fonts.header.style.fontFamily,
     },
     subtitle1: {
       letterSpacing: "0.15px",
@@ -54,12 +60,13 @@ const Typography = (theme) => {
       fontSize: "14pt",
       color: theme.palette.text.primary,
       fontFamily: fonts.body.style.fontFamily,
+      fontWeight: 300
     },
     body2: {
       letterSpacing: "0.15px",
       fontSize: "14pt",
       color: theme.palette.text.secondary,
-      fontWeight: 800,
+      fontWeight: 400,
       fontFamily: fonts.body.style.fontFamily,
     },
     button: {

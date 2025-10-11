@@ -8,7 +8,7 @@ import {
   Typography,
   Button,
   Link,
-  Paper,
+  Box,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
@@ -31,7 +31,7 @@ const Header = () => {
       spacing={0}
       paddingX={6}
       paddingY={2}
-      component={Paper}
+      component={Box}
       sx={{
         position: "fixed",
         top: 0,
@@ -39,6 +39,7 @@ const Header = () => {
         zIndex: 2,
         width: "100%",
         borderBottom: `solid 4px ${theme.palette.secondary.main}`,
+        bgcolor: theme.palette.background.default
       }}
     >
       <Grid
@@ -52,21 +53,20 @@ const Header = () => {
         className={fonts.logo.className}
       >
         <Link href="/" style={{ height: 50, width: 50 }} component={NextLink}>
-          <Image
-            src={`${nextConfig.assetPrefix}/images/conduit_logo.png`}
-            alt="Conduit Church Logo"
+          <img
+            src={`${nextConfig.assetPrefix}/images/ccos_logo_${theme.palette.mode}.svg`}
+            alt="Conduit Church"
             height={50}
-            width={50}
           />
         </Link>
-        <Link href="/" component={NextLink}>
+        {/* <Link href="/" component={NextLink}>
           <Typography
             variant="h3"
             sx={{ fontWeight: 800, textTransform: "lowercase" }}
           >
             {themeConfig.appName}
           </Typography>
-        </Link>
+        </Link> */}
       </Grid>
       {!isMobile && (
         <Grid

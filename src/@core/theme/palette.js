@@ -14,47 +14,47 @@ const DefaultPalette = (mode) => {
       white: "#FFF",
     },
     mode,
-    primary: {
-      light: "#0072bb", //
-      main: "#0072bb", //
-      dark: "#0072bb", //
-      contrastText: "#FFF",
-    },
     secondary: {
-      light: "#7ba05b", //
-      main: "#7ba05b", //
-      dark: "#7ba05b", //
-      contrastText: "#000",
+      light: "#402AA1", //
+      main: "#402AA1", //
+      dark: "#402AA1", //
+      contrastText: "#fff",
+    },
+    primary: {
+      light: "#402AA1", //
+      main: "#402AA1", //
+      dark: "#402AA1", //
+      contrastText: "#fff",
     },
     info: {
-      light: "#ff8600", //
-      main: "#ff8600", //
-      dark: "#ff8600", //
+      light: "#ff8811", //
+      main: "#ff8811", //
+      dark: "#ff8811", //
       contrastText: "#000",
     },
     success: {
-      light: "#328558", //
-      main: "#296B47", // Darmouth Green
-      dark: "#276844", //
-      contrastText: "#FFF",
+      light: "#ff8811", //
+      main: "#ff8811", // Darmouth Green
+      dark: "#ff8811", //
+      contrastText: "#000",
     },
     attention: {
-      light: "#ffe91f", //
-      main: "#fee400", // Canary
-      dark: "#f5dc00", //
+      light: "#ff8811", //
+      main: "#ff8811", // Canary
+      dark: "#ff8811", //
       contrastText: "#000",
     },
     warning: {
-      light: "#e99520", //
-      main: "#d28415", // Fulvous
-      dark: "#cc8014", //
+      light: "#ff8811", //
+      main: "#ff8811", // Fulvous
+      dark: "#ff8811", //
       contrastText: "#000",
     },
     error: {
-      light: "#D92716", // Chili Red
-      main: "#AE2012", // Rufous
-      dark: "#82170D", // Barn Red
-      contrastText: "#FFF",
+      light: "#ff8811", // Chili Red
+      main: "#ff8811", // Rufous
+      dark: "#ff8811", // Barn Red
+      contrastText: "#000",
     },
     grey: {
       50: "#FAFAFA",
@@ -91,8 +91,8 @@ const DefaultPalette = (mode) => {
     },
     divider: `rgba(${mainColor}, 0.12)`,
     background: {
-      paper: mode === "light" ? "#ffffff" : "#001219",
-      default: mode === "light" ? "#f1f2f6" : "#000405",
+      paper: mode === "light" ? "#ffffff" : "#232323",
+      default: mode === "light" ? "#f1f2f6" : "#070707",
       light: {
         paper: "#FFEDDB",
         default: "#E8D8C8",

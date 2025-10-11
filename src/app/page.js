@@ -15,9 +15,9 @@ const Home = () => {
     <Grid container padding={0} rowSpacing={5} columnSpacing={0}>
       <Grid size={12}>
         <img
-          src={`${nextConfig.assetPrefix}/images/home_hero.jpg`}
+          src={`${nextConfig.assetPrefix}/images/home_hero.avif`}
           alt="Bible and Coffee"
-          style={{ maxWidth: "100%", height: "auto" }}
+          style={{ maxWidth: "100%", height: "auto", filter: 'hue-rotate(200deg) grayscale(10%) blur(2px)' }}
         />
       </Grid>
       <Grid size={10} offset={1} sx={{ zIndex: 1 }}>

@@ -1,7 +1,9 @@
 import {
   Alumni_Sans_Pinstripe,
-  Sulphur_Point,
+  Inconsolata,
   Cactus_Classical_Serif,
+  Righteous,
+  Roboto
 } from "next/font/google";
 
 const logo = Alumni_Sans_Pinstripe({
@@ -12,12 +14,20 @@ const logo = Alumni_Sans_Pinstripe({
   variable: "--font-logo",
 });
 
-const header = Sulphur_Point({
-  weight: ["300", "400", "700"],
+const header = Righteous({
+  weight: '400',
+  subsets: ['latin'],
+  display: "auto",
+  style: ['normal'],
+  variable: "--font-header"
+})
+
+const body = Inconsolata({
+  weight: "variable",
   subsets: ["latin"],
   display: "auto",
-  style: "normal",
-  variable: "--font-header",
+  style: ["normal"],
+  variable: "--font-body",
 });
 
 const subtitle = Cactus_Classical_Serif({
@@ -31,7 +41,7 @@ const subtitle = Cactus_Classical_Serif({
 const fonts = {
   logo,
   header,
-  body: header,
+  body,
   subtitle,
 };
 
