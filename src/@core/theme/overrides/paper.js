@@ -1,10 +1,12 @@
-const Paper = () => ({
+const Paper = (theme) => ({
   MuiPaper: {
     styleOverrides: {
       root: {
         backgroundImage: "none",
-        borderRadius: 0,
+        borderRadius: 2,
         boxShadow: "unset",
+        borderBottom: `solid 4px ${theme.palette.info.main}`,
+        borderTop: `solid 4px ${theme.palette.primary.main}`,
       },
     },
   },

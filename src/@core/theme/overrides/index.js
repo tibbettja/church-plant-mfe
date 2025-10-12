@@ -37,7 +37,7 @@ const Overrides = (theme) => {
   const link = Link(theme);
   const list = List(theme);
   const menu = Menu(theme);
-  const paper = Paper();
+  const paper = Paper(theme);
   const popover = Popover(theme);
   const rating = Rating(theme);
   const select = Select();

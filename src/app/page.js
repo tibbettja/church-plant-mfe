@@ -69,9 +69,11 @@ const Home = () => {
             }}
           >
             <img
-              src={`${nextConfig.assetPrefix}/images/worship.avif`}
+              src={`${nextConfig.assetPrefix}/images/Prayer_edited.avif`}
               alt="Community Worship"
               height={300}
+              width={300}
+              style={{ objectFit: 'cover' }}
             />
           </Grid>
           <Grid

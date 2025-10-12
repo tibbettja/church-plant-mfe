@@ -26,84 +26,92 @@ const Header = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Grid
-      container
-      spacing={0}
-      paddingX={6}
-      paddingY={2}
-      component={Box}
+    <Box
       sx={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        zIndex: 2,
-        width: "100%",
-        borderBottom: `solid 4px ${theme.palette.secondary.main}`,
-        bgcolor: theme.palette.background.default
-      }}
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 2,
+          width: "100%",
+          borderBottom: `solid 4px ${theme.palette.primary.main}`,
+          bgcolor: theme.palette.background.default
+        }}
     >
       <Grid
-        size={{ xs: 6, md: 3 }}
+        container
+        spacing={0}
+        paddingX={6}
+        paddingY={2}
+        component={Box}
         sx={{
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          gap: 3,
+          width: "100%",
+          borderBottom: `solid 4px ${theme.palette.secondary.main}`,
+          bgcolor: theme.palette.background.default
         }}
-        className={fonts.logo.className}
       >
-        <Link href="/" style={{ height: 50, width: 50 }} component={NextLink}>
-          <img
-            src={`${nextConfig.assetPrefix}/images/ccos_logo_${theme.palette.mode}.svg`}
-            alt="Conduit Church"
-            height={50}
-          />
-        </Link>
-        {/* <Link href="/" component={NextLink}>
-          <Typography
-            variant="h3"
-            sx={{ fontWeight: 800, textTransform: "lowercase" }}
-          >
-            {themeConfig.appName}
-          </Typography>
-        </Link> */}
-      </Grid>
-      {!isMobile && (
-        <Grid
-          size={6}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            columnGap: 1,
-          }}
-        >
-          <AboutMenu />
-          <GrowMenu />
-          <Link href="/visit" title="Visit" component={NextLink}>
-            <Button variant="outlined">Visit</Button>
-          </Link>
-          <Link href="/events" title="Events" component={NextLink}>
-            <Button>Events</Button>
-          </Link>
-          <Link href="/give" title="Give" component={NextLink}>
-            <Button>Give</Button>
-          </Link>
-        </Grid>
-      )}
-      {isMobile && (
         <Grid
           size={{ xs: 6, md: 3 }}
           sx={{
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "start",
             alignItems: "center",
+            gap: 3,
           }}
+          className={fonts.logo.className}
         >
-          <MobileMenu />
+          <Link href="/" style={{ height: 50, width: 50 }} component={NextLink}>
+            <img
+              src={`${nextConfig.assetPrefix}/images/ccos_logo_${theme.palette.mode}.svg`}
+              alt="Conduit Church"
+              height={50}
+            />
+          </Link>
+          {/* <Link href="/" component={NextLink}>
+            <Typography
+              variant="h3"
+              sx={{ fontWeight: 800, textTransform: "lowercase" }}
+            >
+              {themeConfig.appName}
+            </Typography>
+          </Link> */}
         </Grid>
-      )}
-    </Grid>
+        {!isMobile && (
+          <Grid
+            size={6}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              columnGap: 1,
+            }}
+          >
+            <AboutMenu />
+            <GrowMenu />
+            <Link href="/visit" title="Visit" component={NextLink}>
+              <Button variant="outlined">Visit</Button>
+            </Link>
+            <Link href="/events" title="Events" component={NextLink}>
+              <Button>Events</Button>
+            </Link>
+            <Link href="/give" title="Give" component={NextLink}>
+              <Button>Give</Button>
+            </Link>
+          </Grid>
+        )}
+        {isMobile && (
+          <Grid
+            size={{ xs: 6, md: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          >
+            <MobileMenu />
+          </Grid>
+        )}
+      </Grid>
+    </Box>
   );
 };
 

@@ -1,6 +1,6 @@
 const DefaultPalette = (mode) => {
-  const lightColor = "58, 53, 65";
-  const darkColor = "255, 255, 255";
+  const lightColor = "31, 27, 32";
+  const darkColor = "246, 245, 241";
   const mainColor = mode === "light" ? lightColor : darkColor;
 
   return {
@@ -14,46 +14,46 @@ const DefaultPalette = (mode) => {
       white: "#FFF",
     },
     mode,
-    secondary: {
-      light: "#402AA1", //
-      main: "#402AA1", //
-      dark: "#402AA1", //
-      contrastText: "#fff",
-    },
     primary: {
-      light: "#402AA1", //
-      main: "#402AA1", //
-      dark: "#402AA1", //
+      light: "#034088", //
+      main: "#034088", //
+      dark: "#034088", //
       contrastText: "#fff",
     },
-    info: {
-      light: "#ff8811", //
-      main: "#ff8811", //
-      dark: "#ff8811", //
+    secondary: {
+      light: "#fab900", //
+      main: "#fab900", //
+      dark: "#fab900", //
       contrastText: "#000",
     },
+    info: {
+      light: "#991915", //
+      main: "#991915", //
+      dark: "#991915", //
+      contrastText: "#fff",
+    },
     success: {
-      light: "#ff8811", //
-      main: "#ff8811", // Darmouth Green
-      dark: "#ff8811", //
+      light: "#fab900", //
+      main: "#fab900", // Darmouth Green
+      dark: "#fab900", //
       contrastText: "#000",
     },
     attention: {
-      light: "#ff8811", //
-      main: "#ff8811", // Canary
-      dark: "#ff8811", //
+      light: "#fab900", //
+      main: "#fab900", // Canary
+      dark: "#fab900", //
       contrastText: "#000",
     },
     warning: {
-      light: "#ff8811", //
-      main: "#ff8811", // Fulvous
-      dark: "#ff8811", //
+      light: "#fab900", //
+      main: "#fab900", // Fulvous
+      dark: "#fab900", //
       contrastText: "#000",
     },
     error: {
-      light: "#ff8811", // Chili Red
-      main: "#ff8811", // Rufous
-      dark: "#ff8811", // Barn Red
+      light: "#fab900", // Chili Red
+      main: "#fab900", // Rufous
+      dark: "#fab900", // Barn Red
       contrastText: "#000",
     },
     grey: {
@@ -91,8 +91,8 @@ const DefaultPalette = (mode) => {
     },
     divider: `rgba(${mainColor}, 0.12)`,
     background: {
-      paper: mode === "light" ? "#ffffff" : "#232323",
-      default: mode === "light" ? "#f1f2f6" : "#070707",
+      paper: mode === "light" ? "#ffffff" : "#1f1b20",
+      default: mode === "light" ? "#e5e5e5" : "#000000",
       light: {
         paper: "#FFEDDB",
         default: "#E8D8C8",
