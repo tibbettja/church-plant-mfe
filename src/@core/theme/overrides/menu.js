@@ -1,3 +1,5 @@
+import fonts from "../fonts";
+
 const Menu = (theme) => ({
   MuiMenu: {
     styleOverrides: {
@@ -9,6 +11,12 @@ const Menu = (theme) => ({
               ? theme.shadows[8]
               : theme.shadows[9],
         },
+        "& .MuiMenuItem-root": {
+          letterSpacing: "0.3px",
+          fontSize: "14pt",
+          color: theme.palette.text.primary,
+          fontFamily: fonts.header.style.fontFamily,
+        }
       },
     },
   },

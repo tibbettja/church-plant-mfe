@@ -85,8 +85,9 @@ const Home = () => {
             }}
           >
             <Typography variant="h6">
-              A church family helping people Know God, Find Freedom, Discover
-              their Purpose & Make a Difference.
+              Our mission is to make disciples who are deeply connected to Christ and each other;
+              who are empowered by the Holy Spirit to love boldly;
+              who are equipped to serve as conduits of God's love to a broken world.
             </Typography>
           </Grid>
         </Grid>

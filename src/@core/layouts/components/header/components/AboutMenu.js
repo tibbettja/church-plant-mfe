@@ -27,6 +27,7 @@ const AboutMenu = () => {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         endIcon={<ArrowDropDown />}
+        sx={{ textTransform: 'lowercase' }}
       >
         About
       </Button>

@@ -27,6 +27,7 @@ const GrowMenu = () => {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         endIcon={<ArrowDropDown />}
+        sx={{ textTransform: 'lowercase' }}
       >
         Grow
       </Button>

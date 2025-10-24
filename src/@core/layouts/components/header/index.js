@@ -33,7 +33,7 @@ const Header = () => {
           left: 0,
           zIndex: 2,
           width: "100%",
-          borderBottom: `solid 4px ${theme.palette.primary.main}`,
+          borderBottom: `solid 4px ${theme.palette.secondary.main}`,
           bgcolor: theme.palette.background.default
         }}
     >
@@ -45,7 +45,7 @@ const Header = () => {
         component={Box}
         sx={{
           width: "100%",
-          borderBottom: `solid 4px ${theme.palette.secondary.main}`,
+          borderBottom: `solid 4px ${theme.palette.primary.main}`,
           bgcolor: theme.palette.background.default
         }}
       >
@@ -59,21 +59,21 @@ const Header = () => {
           }}
           className={fonts.logo.className}
         >
-          <Link href="/" style={{ height: 50, width: 50 }} component={NextLink}>
+          <Link href="/" sx={{ height: 50, width: 50, textDecoration: "none !important" }} component={NextLink}>
             <img
-              src={`${nextConfig.assetPrefix}/images/ccos_logo_${theme.palette.mode}.svg`}
+              src={`${nextConfig.assetPrefix}/images/CC2.svg`}
               alt="Conduit Church"
               height={50}
             />
           </Link>
-          {/* <Link href="/" component={NextLink}>
+          <Link href="/" component={NextLink} sx={{ textDecoration: "none !important"}}>
             <Typography
               variant="h3"
               sx={{ fontWeight: 800, textTransform: "lowercase" }}
             >
               {themeConfig.appName}
             </Typography>
-          </Link> */}
+          </Link>
         </Grid>
         {!isMobile && (
           <Grid
@@ -88,13 +88,13 @@ const Header = () => {
             <AboutMenu />
             <GrowMenu />
             <Link href="/visit" title="Visit" component={NextLink}>
-              <Button variant="outlined">Visit</Button>
+              <Button variant="outlined" sx={{ textTransform: 'lowercase' }}>Visit</Button>
             </Link>
             <Link href="/events" title="Events" component={NextLink}>
-              <Button>Events</Button>
+              <Button sx={{ textTransform: 'lowercase' }}>Events</Button>
             </Link>
             <Link href="/give" title="Give" component={NextLink}>
-              <Button>Give</Button>
+              <Button sx={{ textTransform: 'lowercase' }}>Give</Button>
             </Link>
           </Grid>
         )}

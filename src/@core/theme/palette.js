@@ -15,45 +15,45 @@ const DefaultPalette = (mode) => {
     },
     mode,
     primary: {
-      light: "#034088", //
-      main: "#034088", //
-      dark: "#034088", //
+      light: "#168aad", //
+      main: "#168aad", //
+      dark: "#168aad", //
       contrastText: "#fff",
     },
     secondary: {
-      light: "#fab900", //
-      main: "#fab900", //
-      dark: "#fab900", //
+      light: "#76c893", //
+      main: "#76c893", //
+      dark: "#76c893", //
       contrastText: "#000",
     },
     info: {
-      light: "#991915", //
-      main: "#991915", //
-      dark: "#991915", //
+      light: "#0c63e7", //
+      main: "#0c63e7", //
+      dark: "#0c63e7", //
       contrastText: "#fff",
     },
     success: {
-      light: "#fab900", //
-      main: "#fab900", // Darmouth Green
-      dark: "#fab900", //
+      light: "#137547", //
+      main: "#137547", // Darmouth Green
+      dark: "#137547", //
       contrastText: "#000",
     },
     attention: {
-      light: "#fab900", //
-      main: "#fab900", // Canary
-      dark: "#fab900", //
+      light: "#76c893", //
+      main: "#76c893", // Canary
+      dark: "#76c893", //
       contrastText: "#000",
     },
     warning: {
-      light: "#fab900", //
-      main: "#fab900", // Fulvous
-      dark: "#fab900", //
+      light: "#168aad", //
+      main: "#168aad", // Fulvous
+      dark: "#168aad", //
       contrastText: "#000",
     },
     error: {
-      light: "#fab900", // Chili Red
-      main: "#fab900", // Rufous
-      dark: "#fab900", // Barn Red
+      light: "#0c63e7", // Chili Red
+      main: "#0c63e7", // Rufous
+      dark: "#0c63e7", // Barn Red
       contrastText: "#000",
     },
     grey: {
@@ -84,10 +84,10 @@ const DefaultPalette = (mode) => {
       contrastText: "#000",
     },
     text: {
-      primary: `rgba(${mainColor}, 0.93)`,
+      primary: `rgba(${mainColor}, 0.85)`,
       secondary: `rgba(${mainColor}, 0.74)`,
       disabled: `rgba(${mainColor}, 0.57)`,
-      lightPrimary: `rgba(${lightColor}, 0.93)`,
+      lightPrimary: `rgba(${lightColor}, 0.85)`,
     },
     divider: `rgba(${mainColor}, 0.12)`,
     background: {

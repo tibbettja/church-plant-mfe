@@ -1,9 +1,8 @@
 import {
   Alumni_Sans_Pinstripe,
-  Inconsolata,
   Cactus_Classical_Serif,
   Righteous,
-  Roboto
+  Ubuntu
 } from "next/font/google";
 
 const logo = Alumni_Sans_Pinstripe({
@@ -22,11 +21,11 @@ const header = Righteous({
   variable: "--font-header"
 })
 
-const body = Inconsolata({
-  weight: "variable",
+const body = Ubuntu({
+  weight: ["300","400","500","700"],
   subsets: ["latin"],
   display: "auto",
-  style: ["normal"],
+  style: ["normal","italic"],
   variable: "--font-body",
 });
 

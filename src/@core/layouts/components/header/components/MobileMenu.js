@@ -47,53 +47,53 @@ const MobileMenu = () => {
           },
         }}
       >
-        <MenuItem onClick={(e) => handleClose(e, "/about")}>About</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/about")}>About</MenuItem>
         <Divider variant="middle" flexItem />
-        <MenuItem onClick={(e) => handleClose(e, "/beliefs")}>Beliefs</MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/leadership")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/beliefs")}>Beliefs</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/leadership")}>
           Leadership
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/ministry/kids")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/ministry/kids")}>
           Conduit Kids
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/ministry/students")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/ministry/students")}>
           Overcharge Students
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/ministry/young-adults")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/ministry/young-adults")}>
           Young Adults
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/ministry/marriage-family")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/ministry/marriage-family")}>
           Marriage & Family
         </MenuItem>
         <Divider variant="middle" flexItem />
-        <MenuItem onClick={(e) => handleClose(e, "/grow")}>Grow</MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/next-steps")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/grow")}>Grow</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/next-steps")}>
           Next Steps
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/grow/baptism")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/grow/baptism")}>
           Baptism
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/grow/discipleship")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/grow/discipleship")}>
           Discipleship
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/grow/serve-team")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/grow/serve-team")}>
           Serve Team
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/grow/small-groups")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/grow/small-groups")}>
           Small Groups
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/prayer-wall")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/prayer-wall")}>
           Prayer Wall
         </MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/your-story")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/your-story")}>
           Share Your Story
         </MenuItem>
         <Divider variant="middle" flexItem />
-        <MenuItem onClick={(e) => handleClose(e, "/visit")}>Visit</MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/events")}>Events</MenuItem>
-        <MenuItem onClick={(e) => handleClose(e, "/give")}>Give</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/visit")}>Visit</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/events")}>Events</MenuItem>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/give")}>Give</MenuItem>
         <Divider variant="middle" flexItem />
-        <MenuItem onClick={(e) => handleClose(e, "/contact-us")}>
+        <MenuItem sx={{ textTransform: 'lowercase' }} onClick={(e) => handleClose(e, "/contact-us")}>
           Contact Us
         </MenuItem>
       </Menu>
