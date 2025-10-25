@@ -1,20 +1,20 @@
 import {
-  Alumni_Sans_Pinstripe,
+  Outfit,
   Cactus_Classical_Serif,
   Righteous,
   Ubuntu
 } from "next/font/google";
 
-const logo = Alumni_Sans_Pinstripe({
-  weight: "400",
+const logo = Outfit({
+  weight: ["500"],
   subsets: ["latin"],
   display: "auto",
   style: ["normal"],
   variable: "--font-logo",
 });
 
-const header = Righteous({
-  weight: '400',
+const header = Outfit({
+  weight: ["100","200","300","400","500","600","700","800","900"],
   subsets: ['latin'],
   display: "auto",
   style: ['normal'],

@@ -69,7 +69,7 @@ const Header = () => {
           <Link href="/" component={NextLink} sx={{ textDecoration: "none !important"}}>
             <Typography
               variant="h3"
-              sx={{ fontWeight: 800, textTransform: "lowercase" }}
+              sx={{ fontWeight: 500, textTransform: "lowercase" }}
             >
               {themeConfig.appName}
             </Typography>
